@@ -20,12 +20,12 @@ class Review < ApplicationRecord
   private
 
   def comment_user
-    return unless can_comment_user?
+    return if can_comment_user?
     errors.add(:object, 'You can not write review for this user')
   end
 
   def comment_item
-    return unless can_comment_item?
+    return if can_comment_item?
     errors.add(:object, 'You can not write review for this item')
   end
 

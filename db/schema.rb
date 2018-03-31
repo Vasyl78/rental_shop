@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180331075839) do
+ActiveRecord::Schema.define(version: 20180331141513) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(version: 20180331075839) do
     t.index ["user_id"], name: "index_bookings_on_user_id", using: :btree
   end
 
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+  end
+
   create_table "cities", force: :cascade do |t|
     t.string "title"
   end
@@ -32,6 +36,9 @@ ActiveRecord::Schema.define(version: 20180331075839) do
     t.string  "name"
     t.integer "user_id"
     t.integer "city_id"
+    t.integer "category_id"
+    t.string  "brand"
+    t.integer "size"
   end
 
   create_table "reviews", force: :cascade do |t|
