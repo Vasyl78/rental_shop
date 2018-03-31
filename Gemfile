@@ -22,6 +22,7 @@ gem 'uglifier', '>= 1.3.0'
 # ## -- OTHER GEMS -- ##
 gem 'active_model_serializers'
 gem 'annotate'
+gem 'api-pagination'
 gem 'pager_api'
 gem 'will_paginate', '~> 3.1.0'
 
