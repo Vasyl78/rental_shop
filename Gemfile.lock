@@ -208,6 +208,7 @@ DEPENDENCIES
   active_model_serializers
   annotate
   api-pagination
+  arel (~> 7.0)
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails

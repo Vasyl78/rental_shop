@@ -23,6 +23,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'active_model_serializers'
 gem 'annotate'
 gem 'api-pagination'
+gem 'arel', '~> 7.0'
 gem 'pager_api'
 gem 'will_paginate', '~> 3.1.0'
 
